@@ -1,0 +1,9 @@
+# CloudLinux Passenger Configuration
+PassengerAppRoot "/home/qdbvtdco/domains/sarkardeveloper.run.place/public_html/my_app"
+PassengerBaseURI "/my_app"
+PassengerPython "/home/qdbvtdco/virtualenv/domains/sarkardeveloper.run.place/public_html/my_app/3.9/bin/python"
+
+# Enable CORS
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
